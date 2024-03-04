@@ -20,12 +20,14 @@
     width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
-    display: inline-block;
 }
 html{
     font-style: normal;
     font-weight: 300;
     font-size: 10px;
+}
+body{
+    display: inline-block;
 }
 h{
     &1{
