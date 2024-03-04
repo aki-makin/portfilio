@@ -1,0 +1,80 @@
+* {
+  font-family: shippori-mincho-b1, sans-serif;
+  width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+html {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 3.4rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+h4 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+h5 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+p, a, li {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+section {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.skill__btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+.skill__btn--item {
+  width: 16%;
+  margin-right: 2%;
+  margin-left: 2%;
+  padding: 10px;
+  border: 1px #000 solid;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.skill__btn--item.is-focus {
+  background-color: #00ffff;
+}
+.skill__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.skill__list--item {
+  width: 33.3333333333%;
+  margin-right: 0%;
+  margin-left: 0%;
+}/*# sourceMappingURL=index.css.map */

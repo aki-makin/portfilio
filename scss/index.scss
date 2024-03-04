@@ -1,0 +1,77 @@
+@use "sass:math"; 
+
+@mixin font($fz-val,$fw-val: 400,$mb-val: 20){
+    font-size: $fz-val + rem;
+    font-weight: $fw-val;
+    margin-bottom: $mb-val + px;
+}
+@mixin flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+@mixin clm($clm-val,$mr-val: 0,$ml-val: 0){
+    width: math.div(100%,$clm-val) - $mr-val - $ml-val;
+    margin-right: percentage(math.div($mr-val,100));
+    margin-left: percentage(math.div($ml-val,100));
+}
+*{
+    font-family: shippori-mincho-b1, sans-serif;
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: inline-block;
+}
+html{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+}
+h{
+    &1{
+        @include font(4.0,700);
+    }
+    &2{
+        @include font(3.4);
+    }
+    &3{
+        @include font(2.8);
+    }
+    &4{
+        @include font(2.2);
+    }
+    &5{
+        @include font(1.6);
+    }
+}
+p,a,li{
+    @include font(1.6,500,10);
+}
+section{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.skill{
+    &__btn{
+        @include flex;
+        margin-bottom: 20px;
+        &--item{
+            @include clm(5,2,2);
+            padding: 10px;
+            border: 1px #000 solid;
+            border-radius: 20px;
+            text-align: center;
+            cursor: pointer;
+            &.is-focus{
+                background-color: #00ffff;
+            }
+        }
+    }
+    &__list{
+        @include flex;
+        &--item{
+            @include clm(3);
+        }
+    
+    }
+}
