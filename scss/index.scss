@@ -53,6 +53,11 @@ section{
     margin-top: 40px;
     margin-bottom: 60px;
 }
+.header{
+    &__list{
+        @include flex;
+    }
+}
 .skill{
     &__btn{
         @include flex;

@@ -52,6 +52,12 @@ section {
   margin-bottom: 60px;
 }
 
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
 .skill__btn {
   display: flex;
   flex-wrap: wrap;
