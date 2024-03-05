@@ -5,10 +5,10 @@
     font-weight: $fw-val;
     margin-bottom: $mb-val + px;
 }
-@mixin flex{
+@mixin flex($jc: left){
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: $jc;
 }
 @mixin clm($clm-val,$mr-val: 0,$ml-val: 0){
     width: math.div(100%,$clm-val) - $mr-val - $ml-val;
@@ -55,7 +55,10 @@ section{
 }
 .header{
     &__list{
-        @include flex;
+        @include flex(right);
+        &--item{
+            @include clm(10,1,1)
+        }
     }
 }
 .skill{
