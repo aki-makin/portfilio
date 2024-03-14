@@ -15,7 +15,9 @@
           },
           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
-      </script>
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </head>
 <body>
     <nav>
@@ -52,9 +54,9 @@
         <section id="skill">
             <h2>スキル</h2>
             <ul class="skill__btn">
-                <li class="skill__btn--item" data-fillter="business">業務利用経験あり</li>
-                <li class="skill__btn--item" data-fillter="study">自己学習中</li>
-                <li class="skill__btn--item" data-fillter="blank">ブランクあり</li>
+                <li class="skill__btn--item" data-filter="business">業務利用経験あり</li>
+                <li class="skill__btn--item" data-filter="study">自己学習中</li>
+                <li class="skill__btn--item" data-filter="blank">ブランクあり</li>
             </ul>
             <ul class="skill__list">
                 <li class="skill__list--item" data-experience="business">HTML</li>

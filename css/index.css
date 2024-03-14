@@ -88,7 +88,23 @@ section {
   justify-content: left;
 }
 .skill__list--item {
-  width: 33.3333333333%;
+  width: 20%;
   margin-right: 0%;
   margin-left: 0%;
+}
+
+.is-active {
+  opacity: 1;
+  animation: 0.6s zoom-in;
+}
+
+@keyframes zoom-in {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }/*# sourceMappingURL=index.css.map */
